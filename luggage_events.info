@@ -27,6 +27,7 @@ features[field_instance][] = node-event-field_category
 features[field_instance][] = node-event-field_event_type
 features[field_instance][] = node-event-field_event_when
 features[field_instance][] = node-event-field_tags
+features[menu_links][] = main-menu_events:events
 features[node][] = event
 features[taxonomy][] = event_type
 features[variable][] = field_bundle_settings_node__event
