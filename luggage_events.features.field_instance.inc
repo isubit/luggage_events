@@ -36,7 +36,7 @@ function luggage_events_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -54,7 +54,7 @@ function luggage_events_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -87,12 +87,7 @@ function luggage_events_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
@@ -111,25 +106,22 @@ function luggage_events_field_default_field_instances() {
       'search_index' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
     ),
@@ -159,12 +151,7 @@ function luggage_events_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
@@ -183,32 +170,23 @@ function luggage_events_field_default_field_instances() {
       'search_index' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'search_result' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -270,7 +248,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -336,12 +314,7 @@ function luggage_events_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
@@ -360,25 +333,22 @@ function luggage_events_field_default_field_instances() {
       'search_index' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
     ),
