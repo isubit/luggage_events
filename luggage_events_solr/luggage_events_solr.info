@@ -1,0 +1,11 @@
+name = luggage_events_solr
+description = integration of solr with event type vocabulary as a facet
+core = 7.x
+package = Luggage
+version = 7.x-2.0
+project = luggage_events_solr
+dependencies[] = ctools
+dependencies[] = facetapi
+features[ctools][] = facetapi:facetapi_defaults:1
+features[facetapi][] = apachesolr@solr:block:im_field_event_type
+features[features_api][] = api:2
