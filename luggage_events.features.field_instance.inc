@@ -228,7 +228,7 @@ function luggage_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'friendly',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -241,7 +241,7 @@ function luggage_events_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'friendly',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -254,7 +254,7 @@ function luggage_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'friendly',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -267,7 +267,7 @@ function luggage_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'friendly',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
