@@ -5,3 +5,18 @@
  */
 
 include_once 'luggage_events.features.inc';
+
+function luggage_events_views_pre_build(&$view) {
+  if($view->name == 'events') {
+    drupal_add_css(drupal_get_path('module','luggage_events').'/css/luggage_events.css');
+  }
+}
+
+function luggage_events_node_view($node, $view_mode, $langcode) {
+  $arg = arg(0);
+  $arg1 = arg(1);
+  $arg2 = arg(2);
+  if($node->type == 'event' && $view_mode == 'full') {
+    drupal_add_css(drupal_get_path('module','luggage_events').'/css/luggage_events.css');
+  }
+}
