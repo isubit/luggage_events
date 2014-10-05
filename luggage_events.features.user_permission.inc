@@ -14,6 +14,7 @@ function luggage_events_user_default_permissions() {
   $permissions['create event content'] = array(
     'name' => 'create event content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
@@ -24,7 +25,6 @@ function luggage_events_user_default_permissions() {
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
     'roles' => array(
-      'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
     'module' => 'node',
@@ -34,6 +34,7 @@ function luggage_events_user_default_permissions() {
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -52,6 +53,7 @@ function luggage_events_user_default_permissions() {
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
