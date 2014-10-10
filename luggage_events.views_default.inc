@@ -286,6 +286,8 @@ function luggage_events_views_default_views() {
 
   /* Display: Upcoming */
   $handler = $view->new_display('block', 'Upcoming', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Upcoming Events';
   $handler->display->display_options['display_description'] = 'Upcoming events block';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
@@ -318,6 +320,7 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
     'field_data_field_event_when.field_event_when_value' => 'field_data_field_event_when.field_event_when_value',
   );
+  $handler->display->display_options['block_description'] = 'Upcoming Events';
 
   /* Display: List */
   $handler = $view->new_display('page', 'List', 'page_4');
