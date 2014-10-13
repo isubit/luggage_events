@@ -50,12 +50,11 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_when']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_when']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_event_when']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'friendly',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => '',
   );
   $handler->display->display_options['fields']['field_event_when']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_event_when']['delta_offset'] = '0';
