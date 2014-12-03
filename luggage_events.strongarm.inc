@@ -63,7 +63,7 @@ function luggage_events_strongarm() {
           'weight' => '7',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
