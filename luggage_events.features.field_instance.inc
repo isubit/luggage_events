@@ -215,7 +215,7 @@ function luggage_events_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => '',
+        'insert_width' => '675',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
