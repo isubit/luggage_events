@@ -16,7 +16,6 @@ function luggage_events_user_default_permissions() {
     'roles' => array(
       'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -25,7 +24,7 @@ function luggage_events_user_default_permissions() {
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
     'roles' => array(
-      'content publisher' => 'content publisher',
+      'content editor' => 'content editor',
     ),
     'module' => 'node',
   );
@@ -39,12 +38,20 @@ function luggage_events_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in event_type'.
+  $permissions['delete terms in event_type'] = array(
+    'name' => 'delete terms in event_type',
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any event content'.
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
     'roles' => array(
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -56,6 +63,15 @@ function luggage_events_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in event_type'.
+  $permissions['edit terms in event_type'] = array(
+    'name' => 'edit terms in event_type',
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
+    'module' => 'taxonomy',
   );
 
   return $permissions;
