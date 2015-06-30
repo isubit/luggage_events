@@ -27,7 +27,7 @@ function luggage_events_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 2,
+    'weight' => -25,
     'customized' => 1,
   );
   // Translatables
