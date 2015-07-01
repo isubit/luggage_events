@@ -134,7 +134,7 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['type'] = 'normal';
   $handler->display->display_options['tab_options']['title'] = 'Calendar';
-  $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['weight'] = '-25';
 
   /* Display: Week */
   $handler = $view->new_display('page', 'Week', 'page_2');
@@ -453,12 +453,12 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['path'] = 'events/list';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Events';
-  $handler->display->display_options['menu']['weight'] = '-25';
+  $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['type'] = 'normal';
   $handler->display->display_options['tab_options']['title'] = 'Events';
-  $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['weight'] = '-25';
   $handler->display->display_options['tab_options']['name'] = 'main-menu';
 
   /* Display: Archive */
@@ -596,7 +596,7 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['title'] = 'Events';
-  $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['weight'] = '-25';
   $handler->display->display_options['tab_options']['name'] = 'main-menu';
   $export['events'] = $view;
 
