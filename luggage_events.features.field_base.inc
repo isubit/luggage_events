@@ -10,7 +10,7 @@
 function luggage_events_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_event_file'
+  // Exported field_base: 'field_event_file'.
   $field_bases['field_event_file'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -33,7 +33,7 @@ function luggage_events_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_event_image'
+  // Exported field_base: 'field_event_image'.
   $field_bases['field_event_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -55,7 +55,7 @@ function luggage_events_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_event_type'
+  // Exported field_base: 'field_event_type'.
   $field_bases['field_event_type'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -81,7 +81,7 @@ function luggage_events_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_event_when'
+  // Exported field_base: 'field_event_when'.
   $field_bases['field_event_when'] = array(
     'active' => 1,
     'cardinality' => 1,

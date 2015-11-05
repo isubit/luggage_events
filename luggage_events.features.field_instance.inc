@@ -10,7 +10,7 @@
 function luggage_events_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-body'
+  // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function luggage_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_category'
+  // Exported field_instance: 'node-event-field_category'.
   $field_instances['node-event-field_category'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -94,14 +94,9 @@ function luggage_events_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -141,7 +136,7 @@ function luggage_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_file'
+  // Exported field_instance: 'node-event-field_event_file'.
   $field_instances['node-event-field_event_file'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -152,13 +147,13 @@ function luggage_events_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -219,11 +214,11 @@ function luggage_events_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_image'
+  // Exported field_instance: 'node-event-field_event_image'.
   $field_instances['node-event-field_event_image'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -233,13 +228,13 @@ function luggage_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'search_index' => array(
         'label' => 'above',
@@ -304,11 +299,11 @@ function luggage_events_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_type'
+  // Exported field_instance: 'node-event-field_event_type'.
   $field_instances['node-event-field_event_type'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -325,12 +320,7 @@ function luggage_events_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
@@ -372,7 +362,7 @@ function luggage_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_when'
+  // Exported field_instance: 'node-event-field_event_when'.
   $field_instances['node-event-field_event_when'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -387,6 +377,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -400,6 +391,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -413,6 +405,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -426,6 +419,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -439,6 +433,7 @@ function luggage_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -471,7 +466,7 @@ function luggage_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_tags'
+  // Exported field_instance: 'node-event-field_tags'.
   $field_instances['node-event-field_tags'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -488,14 +483,9 @@ function luggage_events_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'search_index' => array(
         'label' => 'inline',
