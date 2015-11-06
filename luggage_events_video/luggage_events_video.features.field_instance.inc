@@ -35,7 +35,7 @@ function luggage_events_video_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -100,8 +100,8 @@ function luggage_events_video_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_video'.
-  $field_instances['node-event-field_event_video'] = array(
+  // Exported field_instance: 'node-event-field_video_video'.
+  $field_instances['node-event-field_video_video'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
@@ -109,8 +109,13 @@ function luggage_events_video_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'video_embed_field',
+        'settings' => array(
+          'description' => 1,
+          'description_position' => 'bottom',
+          'video_style' => 'normal',
+        ),
+        'type' => 'video_embed_field',
         'weight' => 8,
       ),
       'full' => array(
@@ -129,7 +134,7 @@ function luggage_events_video_field_default_field_instances() {
         'module' => 'video_embed_field',
         'settings' => array(),
         'type' => 'video_embed_field_url',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -145,7 +150,7 @@ function luggage_events_video_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_event_video',
+    'field_name' => 'field_video_video',
     'label' => 'Video',
     'required' => 0,
     'settings' => array(

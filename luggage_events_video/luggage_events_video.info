@@ -9,6 +9,5 @@ dependencies[] = text
 dependencies[] = video_embed_field
 features[features_api][] = api:2
 features[field_base][] = field_event_transcript
-features[field_base][] = field_event_video
 features[field_instance][] = node-event-field_event_transcript
-features[field_instance][] = node-event-field_event_video
+features[field_instance][] = node-event-field_video_video
