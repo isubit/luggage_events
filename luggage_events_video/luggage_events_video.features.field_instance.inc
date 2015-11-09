@@ -10,8 +10,8 @@
 function luggage_events_video_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-field_event_transcript'.
-  $field_instances['node-event-field_event_transcript'] = array(
+  // Exported field_instance: 'node-event-field_video_transcript'.
+  $field_instances['node-event-field_video_transcript'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
@@ -21,7 +21,7 @@ function luggage_events_video_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -35,7 +35,7 @@ function luggage_events_video_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -51,10 +51,10 @@ function luggage_events_video_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_event_transcript',
-    'label' => 'Video Transcript or Alternate URL',
+    'field_name' => 'field_video_transcript',
+    'label' => 'Transcript or Alternate URL',
     'placeholder' => '',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -86,7 +86,7 @@ function luggage_events_video_field_default_field_instances() {
           ),
         ),
       ),
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -96,7 +96,7 @@ function luggage_events_video_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 14,
     ),
   );
 
@@ -109,14 +109,9 @@ function luggage_events_video_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'video_embed_field',
-        'settings' => array(
-          'description' => 1,
-          'description_position' => 'bottom',
-          'video_style' => 'normal',
-        ),
-        'type' => 'video_embed_field',
-        'weight' => 8,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -134,7 +129,7 @@ function luggage_events_video_field_default_field_instances() {
         'module' => 'video_embed_field',
         'settings' => array(),
         'type' => 'video_embed_field_url',
-        'weight' => 3,
+        'weight' => 8,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -151,7 +146,7 @@ function luggage_events_video_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_video_video',
-    'label' => 'Video',
+    'label' => 'Video URL',
     'required' => 0,
     'settings' => array(
       'allowed_providers' => array(
@@ -167,16 +162,16 @@ function luggage_events_video_field_default_field_instances() {
       'module' => 'video_embed_field',
       'settings' => array(),
       'type' => 'video_embed_field_video',
-      'weight' => 8,
+      'weight' => 13,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Enter a URL from Vimeo or YouTube');
+  t('Transcript or Alternate URL');
   t('Use this to provide a transcript for the video and/or an alternate URL for the video with descriptive audio. A good resource explaining accessibility requirements for media: <a target="_blank" href="http://www.w3.org/2008/06/video-notes">http://www.w3.org/2008/06/video-notes</a>');
-  t('Video');
-  t('Video Transcript or Alternate URL');
+  t('Video URL');
 
   return $field_instances;
 }
