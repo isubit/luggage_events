@@ -28,7 +28,7 @@ function luggage_events_node_info() {
     'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',
-      'description' => t('an event has a start and end time as well as an event type'),
+      'description' => t('An event has a start and end time as well as an event type.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
