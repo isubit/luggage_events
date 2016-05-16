@@ -61,7 +61,7 @@ function luggage_events_field_default_field_bases() {
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_location',
+    'field_name' => 'field_event_location',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
