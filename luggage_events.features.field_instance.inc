@@ -314,23 +314,25 @@ function luggage_events_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 2,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 2,
       ),
       'search_index' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_title_plain',
+        'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -339,15 +341,16 @@ function luggage_events_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_event_location',
-    'label' => 'Location',
+    'field_name' => 'field_location',
+    'label' => 'location',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -380,7 +383,6 @@ function luggage_events_field_default_field_instances() {
       'weight' => 6,
     ),
   );
-
 
   // Exported field_instance: 'node-event-field_event_type'.
   $field_instances['node-event-field_event_type'] = array(
