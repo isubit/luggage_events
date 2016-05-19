@@ -350,7 +350,7 @@ function luggage_events_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_event_location',
-    'label' => 'location',
+    'label' => 'Location',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
