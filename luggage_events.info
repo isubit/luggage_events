@@ -12,6 +12,7 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = file
 dependencies[] = image
+dependencies[] = link
 dependencies[] = luggage_roles
 dependencies[] = menu
 dependencies[] = node

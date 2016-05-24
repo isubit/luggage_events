@@ -54,7 +54,7 @@ function luggage_events_field_default_field_bases() {
     'translatable' => 0,
     'type' => 'image',
   );
-  
+
   // Exported field_base: 'field_event_location'.
   $field_bases['field_event_location'] = array(
     'active' => 1,
