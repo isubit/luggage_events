@@ -52,6 +52,7 @@ features[variable][] = node_options_event
 features[variable][] = node_preview_event
 features[variable][] = node_submitted_event
 features[variable][] = publishcontent_event
+features[variable][] = read_more_event_view_modes
 features[views_view][] = events
 features_exclude[dependencies][luggage_events_video] = luggage_events_video
 features_exclude[field_base][field_event_transcript] = field_event_transcript
