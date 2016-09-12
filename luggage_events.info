@@ -46,6 +46,7 @@ features[user_permission][] = edit any event content
 features[user_permission][] = edit own event content
 features[variable][] = comment_event
 features[variable][] = date_format_friendly
+features[variable][] = date_format_tiny
 features[variable][] = field_bundle_settings_node__event
 features[variable][] = menu_options_event
 features[variable][] = menu_parent_event
