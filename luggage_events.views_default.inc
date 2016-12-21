@@ -339,10 +339,11 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['operator'] = '>=';
+  $handler->display->display_options['filters']['date_filter']['granularity'] = 'hour';
   $handler->display->display_options['filters']['date_filter']['default_date'] = 'now';
   $handler->display->display_options['filters']['date_filter']['add_delta'] = 'yes';
   $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
-    'field_data_field_event_when.field_event_when_value' => 'field_data_field_event_when.field_event_when_value',
+    'field_data_field_event_when.field_event_when_value2' => 'field_data_field_event_when.field_event_when_value2',
   );
   $handler->display->display_options['block_description'] = 'Upcoming Events';
 
@@ -421,9 +422,10 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['operator'] = '>=';
+  $handler->display->display_options['filters']['date_filter']['granularity'] = 'hour';
   $handler->display->display_options['filters']['date_filter']['default_date'] = 'now';
   $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
-    'field_data_field_event_when.field_event_when_value' => 'field_data_field_event_when.field_event_when_value',
+    'field_data_field_event_when.field_event_when_value2' => 'field_data_field_event_when.field_event_when_value2',
   );
   /* Filter criterion: Content: Has taxonomy term */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
