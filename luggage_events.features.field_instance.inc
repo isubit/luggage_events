@@ -404,8 +404,7 @@ function luggage_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add Tags to help users find related content. Enter Tags as a comma delimited string.
-Baseball, bat, glove, ...',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -568,7 +567,8 @@ Baseball, bat, glove, ...',
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Add Tags to help users find related content. Enter Tags as a comma delimited string.
+Baseball, bat, glove, ...',
     'display' => array(
       'default' => array(
         'label' => 'inline',
