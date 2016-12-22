@@ -209,7 +209,7 @@ function luggage_events_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => 675,
+        'insert_width' => '',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
@@ -279,7 +279,7 @@ function luggage_events_field_default_field_instances() {
       'settings' => array(
         'insert' => 1,
         'insert_absolute' => 0,
-        'insert_class' => '',
+        'insert_class' => 'insert-default-image-styling',
         'insert_default' => 'auto',
         'insert_styles' => array(
           'auto' => 'auto',
@@ -297,7 +297,7 @@ function luggage_events_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => 800,
+        'insert_width' => 675,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -430,7 +430,7 @@ function luggage_events_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_event_type',
     'label' => 'Event Type',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -552,7 +552,8 @@ function luggage_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Add Tags to help users find related content. Enter Tags as a comma delimited string.
+Baseball, bat, glove, ...',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -593,6 +594,7 @@ function luggage_events_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tags',
     'label' => 'Tags',
+    'placeholder' => '',    
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -611,6 +613,8 @@ function luggage_events_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
+Baseball, bat, glove, ...');  
   t('Body');
   t('Category');
   t('Event Type');
