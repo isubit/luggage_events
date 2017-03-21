@@ -45,7 +45,7 @@ function luggage_events_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -107,10 +107,9 @@ function luggage_events_field_default_field_instances() {
       ),
       'search_result' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -338,7 +337,7 @@ function luggage_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -414,9 +413,8 @@ function luggage_events_field_default_field_instances() {
       ),
       'search_result' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -578,10 +576,9 @@ Baseball, bat, glove, ...',
       ),
       'search_result' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -594,7 +591,7 @@ Baseball, bat, glove, ...',
     'entity_type' => 'node',
     'field_name' => 'field_tags',
     'label' => 'Tags',
-    'placeholder' => '',    
+    'placeholder' => '',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -614,7 +611,7 @@ Baseball, bat, glove, ...',
   // Translatables
   // Included for use with string extractors like potx.
   t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
-Baseball, bat, glove, ...');  
+Baseball, bat, glove, ...');
   t('Body');
   t('Category');
   t('Event Type');
