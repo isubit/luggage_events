@@ -24,6 +24,15 @@ function luggage_events_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'frontpanel' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 2,
+      ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -91,6 +100,12 @@ function luggage_events_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
@@ -142,6 +157,12 @@ function luggage_events_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'frontpanel' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -223,6 +244,12 @@ function luggage_events_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'frontpanel' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -319,6 +346,13 @@ function luggage_events_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 2,
       ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 1,
+      ),
       'full' => array(
         'label' => 'inline',
         'module' => 'link',
@@ -397,6 +431,12 @@ function luggage_events_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
@@ -448,6 +488,20 @@ function luggage_events_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'friendly',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 0,
+      ),
+      'frontpanel' => array(
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
@@ -558,6 +612,12 @@ Baseball, bat, glove, ...',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'full' => array(
