@@ -200,7 +200,7 @@ function luggage_events_field_default_field_instances() {
       'title' => 'value',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => 'Read more information',
+      'title_value' => 'External information about [node:title]',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,

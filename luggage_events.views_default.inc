@@ -58,6 +58,10 @@ function luggage_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_when']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_event_when']['delta_offset'] = '0';
+  /* Field: Content: Alternate URL */
+  $handler->display->display_options['fields']['field_event_alternate_url']['id'] = 'field_event_alternate_url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['table'] = 'field_data_field_event_alternate_url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['field'] = 'field_event_alternate_url';
   /* Sort criterion: Content: When -  start date (field_event_when) */
   $handler->display->display_options['sorts']['field_event_when_value']['id'] = 'field_event_when_value';
   $handler->display->display_options['sorts']['field_event_when_value']['table'] = 'field_data_field_event_when';
@@ -325,6 +329,54 @@ function luggage_events_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
+  /* Field: Content: Alternate URL */
+  $handler->display->display_options['fields']['field_event_alternate_url']['id'] = 'field_event_alternate_url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['table'] = 'field_data_field_event_alternate_url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['field'] = 'field_event_alternate_url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['label'] = '';
+  $handler->display->display_options['fields']['field_event_alternate_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_alternate_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_alternate_url']['empty'] = '[path]';
+  $handler->display->display_options['fields']['field_event_alternate_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_event_alternate_url']['type'] = 'link_url';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_event_alternate_url]';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: When */
+  $handler->display->display_options['fields']['field_event_when']['id'] = 'field_event_when';
+  $handler->display->display_options['fields']['field_event_when']['table'] = 'field_data_field_event_when';
+  $handler->display->display_options['fields']['field_event_when']['field'] = 'field_event_when';
+  $handler->display->display_options['fields']['field_event_when']['label'] = '';
+  $handler->display->display_options['fields']['field_event_when']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_when']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_event_when']['settings'] = array(
+    'format_type' => 'friendly',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  $handler->display->display_options['fields']['field_event_when']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_event_when']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
