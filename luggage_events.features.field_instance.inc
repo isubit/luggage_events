@@ -585,10 +585,12 @@ function luggage_events_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
+        'display_all_day' => 1,
         'increment' => 1,
         'input_format' => 'j M Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),

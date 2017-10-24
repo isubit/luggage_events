@@ -7,6 +7,7 @@ project = luggage_events
 dependencies[] = calendar
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = date_all_day
 dependencies[] = date_views
 dependencies[] = ds
 dependencies[] = features
