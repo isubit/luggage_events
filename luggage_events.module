@@ -47,7 +47,7 @@ function luggage_events_element_info_alter(&$type) {
 }
 
 function luggage_events_field_process($element, $form_state, $complete_form) {
-  if (isset($complete_form['#bundle']) && $complete_form['#bundle'] == 'event') {
+  if (isset($complete_form['#bundle']) && $complete_form['#bundle'] == 'event' && $element['#field_name'] == 'field_event_location') {
     $element['title']['#description'] = t('Where is this event happening?');
     $element['url']['#description'] = t('Optional link to event location.');
   }
