@@ -10,3 +10,13 @@ function luggage_events_enable() {
     ->condition('name', 'luggage_events')
     ->execute();
 }
+
+/**
+ * Add a space between the minute and am pm in the friendly date format
+ */
+function luggage_events_update_7103() {
+  $friendly_format = variable_get('date_format_friendly');
+  if ($friendly_format == 'l, F j, Y - g:ia') {
+    variable_set('date_format_friendly', 'l, F j, Y - g:i a');
+  }
+}
